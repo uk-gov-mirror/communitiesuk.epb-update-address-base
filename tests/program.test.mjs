@@ -41,7 +41,7 @@ async function captureLogs(fn) {
 }
 
 describe('install', () => {
-  test('installs the lastest version', async () => {
+  test('installs the latest version', async () => {
     const logs = await captureLogs(async () => {
       const program = createProgram();
       await program.parseAsync(['install'], { from: 'user' });
@@ -178,7 +178,7 @@ describe('update', () => {
     ).toEqual(originalAddresses);
   });
 
-  test('updates to the lastest version', async () => {
+  test('updates to the latest version', async () => {
     // Install older version
     await captureLogs(async () => {
       const program = createProgram();
@@ -351,7 +351,7 @@ describe('update', () => {
     expect(exitSpy).toHaveBeenCalledWith(1);
   });
 
-  test('returns if already updated to the lastest version', async () => {
+  test('returns if already updated to the latest version', async () => {
     await captureLogs(async () => {
       const program = createProgram();
       await program.parseAsync(['install'], {

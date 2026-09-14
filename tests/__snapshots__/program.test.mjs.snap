@@ -233,7 +233,7 @@ exports[`install installs a specific version 1`] = `
 ]
 `;
 
-exports[`install installs the lastest version 1`] = `
+exports[`install installs the latest version 1`] = `
 [
   {
     "address_line1": "19 NIGHTINGALE DRIVE",
@@ -807,7 +807,7 @@ exports[`update updates to a specific version 1`] = `
 ]
 `;
 
-exports[`update updates to the lastest version 1`] = `
+exports[`update updates to the latest version 1`] = `
 [
   {
     "address_line1": "19 NIGHTINGALE DRIVE",
