@@ -12,7 +12,7 @@ phases:
       - echo Building the Paketo image...
       - pack build ebpr-address-base-updater-image --builder paketobuildpacks/ubuntu-noble-builder
       # Ensure node and npm is available on the entrypoint
-      - docker run -it --rm --entrypoint launcher ebpr-address-base-updater-image npm --version
+      - docker run --rm --entrypoint launcher ebpr-address-base-updater-image npm --version
 
   post_build:
     commands:
